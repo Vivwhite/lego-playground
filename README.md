@@ -1,4 +1,4 @@
-# lego-playground
+# lego-playground ![Imgur](http://i.imgur.com/rLmYlrg.png)
 
 A library to store reusable UI components and code snippets for future use.
 
@@ -7,7 +7,7 @@ User can log in/log out the account with Gmail account.
 User can read/see gallery.
 User can create lego molecule, and write and store code.
 User can update/delete his/her lego molecule.
-User can share code snippets on social media. 
+User can share code snippets on social media.
 
 ERD:
 
