@@ -1,0 +1,25 @@
+$primary-color: #76BED0;
+$secondary-color: white;
+$primary-font: 'Lato', sans-serif;
+
+.App-header {
+  background-color: $primary-color;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.navbar-profile-pic {
+  width: 25px;
+  margin-top: -4px;
+  margin-right: 3px;
+}
+
+.navbar-fixed-top {
+  height: 42px;
+  background-color: rgba(135, 135, 135, 0.25);
+}
+
+.btn-login {
+  margin-top: 8px;
+}
