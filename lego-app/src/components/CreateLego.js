@@ -10,10 +10,10 @@ import 'codemirror/mode/xml/xml';
 import 'codemirror/mode/markdown/markdown';
 
 
-// const defaults = {
-//   markdown: '# hello',
-//   javascript: 'var component = {\n\tname: "react-codemirror",\n\tauthor: "Vivienne";'
-// };
+const defaults = {
+  javascript: '//Write your JS code here',
+  html: '<!–– Write your HTML code here ––>'
+};
 
 class CreateLego extends Component {
   constructor(props){
@@ -25,16 +25,27 @@ class CreateLego extends Component {
       type: '',
       content: '',
       tag: '',
-    }
+      mode: 'javascript',
+    },
+    this.changeMode = this.changeMode.bind(this);
+    this.onFormSubmit = this.onFormSubmit.bind(this);
   }
 
 
-  // getInitialState(){
-  //   return {
-  //     code: markdown,
-  //     mode: 'markdown',
-  //   }
-  // }
+  updateCode (newCode) {
+    this.setState({
+      code: newCode
+    });
+  }
+
+
+  changeMode (e) {
+    var mode = e.target.value;
+    this.setState({
+      mode: mode,
+      code: defaults[mode]
+    });
+  }
 
 
   onFormSubmit(e){
@@ -44,11 +55,15 @@ class CreateLego extends Component {
       title: this.state.title,
       language: this.state.language,
       type: this.state.type,
-      content: this.state.type,
+      content: this.state.content,
       tag: this.state.tag
     }
 
-    this.props.createLego(newLego)
+    LegoModel.create(newLego).then( (res) => {
+      let legos = this.state.legos
+      let newLegoStacks = legos.push(res)
+      this.setState({newLegoStacks})
+    })
     this.setState({
       title: '',
       language: '',
@@ -60,20 +75,12 @@ class CreateLego extends Component {
   }
 
 
-  createLego(newLego) {
 
-    LegoModel.create(newLego).then( (res) => {
-      let legos = this.state.legos
-      let newLegoStacks = legos.push(res)
-      this.setState({newLegoStacks})
-    })
-
-  }
 
   render(){
     let options = {
    lineNumbers: true,
-   mode: 'javascript',
+   mode: this.state.mode,
    theme: 'dracula'
  };
     return(
@@ -90,11 +97,17 @@ class CreateLego extends Component {
                 value={ this.state.title }
                 type="text" className="form-control" placeholder="Enter title..."></input>
             </div>
+
             <div className="col-3 create-form-language">
-              <p>Language</p>
+              <select  onChange={this.changeMode} value={this.state.mode} className="selectpicker">
+                <option value="javascript">Javascript</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+              </select>
+
               <input onChange={ e => { this.setState({ language: e.target.value }) } }
                 value={ this.state.language }
-                type="text" className="form-control" placeholder="HTML, Javascript..."></input>
+                type="hidden" className="form-control" placeholder="HTML, Javascript..."></input>
             </div>
             <div className="col-4 create-form-type">
               <p>Type</p>
@@ -105,8 +118,11 @@ class CreateLego extends Component {
             <div className="row code-snippet">
               <p>Code Snippet</p>
 
-              <Codemirror ref="editor" onChange={ e => { this.setState({ content: e.target.value }) } }
-                value={ this.state.content } options={options} interact={this.interact} />
+              <Codemirror ref="editor"
+                onChange={ e => { this.setState({ content: e }) } }
+                value={ this.state.content }
+                options={options}
+                interact={this.interact} />
             </div>
             <div className="row button-div">
               <button type="submit" className="btn btn-primary pull-center create-lego-btn">Create</button>
