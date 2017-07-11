@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { auth } from '../utils/firebase';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import LoginButton from './LoginButton';
 import LogoutButton from './LogoutButton';
 // import { Link } from 'react-router'
@@ -22,28 +22,17 @@ class Navbar extends Component {
     return (
       <nav className="navbar navbar-default navbar-fixed-top">
         <div className="container">
-          <div className="navbar-header">
-            <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span className="sr-only">Toggle navigation</span>
-              <span className="icon-bar"></span>
-              <span className="icon-bar"></span>
-              <span className="icon-bar"></span>
-            </button>
 
-          </div>
           <div id="navbar" className="navbar-collapse collapse">
-            <ul className="nav navbar-nav navbar-right">
-              
-              <li className="dropdown">
+            <div className="nav navbar-nav navbar-right">
+              <div className="dropdown">
+
                 { this.sessionButton() }
-                <ul className="dropdown-menu">
-                  <li><a href="#" className="logo-home pull-left">Home</a></li>
-                  <li><a href="#">View profile</a></li>
-                  <li role="separator" className="divider"></li>
-                  <li><LogoutButton { ...this.props }>Log out</LogoutButton></li>
-                </ul>
-              </li>
-            </ul>
+
+                  <button><LogoutButton { ...this.props }>Log out</LogoutButton></button>
+
+              </div>
+            </div>
           </div>
         </div>
       </nav>

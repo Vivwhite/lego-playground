@@ -1,8 +1,14 @@
+.App {
+  text-align: center; }
+
+.App h2 {
+  padding-top: 30px; }
+
 .App-header {
-  background-color: #76BED0;
-  height: 150px;
+  background-color: white;
+  height: 130px;
   padding: 20px;
-  color: white; }
+  color: #76BED0; }
 
 .navbar-profile-pic {
   width: 25px;
@@ -15,5 +21,186 @@
 
 .btn-login {
   margin-top: 8px; }
+
+.card {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  min-width: 270px;
+  max-width: 380px;
+  height: 350px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  display: inline-block; }
+
+.card:hover,
+.hover {
+  -webkit-box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3); }
+
+.card:hover .thumbnail img,
+.hover .thumbnail img {
+  transform: scale(1.1);
+  opacity: .6; }
+
+.card .thumbnail {
+  background: #000000;
+  height: 350px;
+  overflow: hidden;
+  padding: 0; }
+
+.card .thumbnail .edit-circle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+  background: #f2b202;
+  width: 50px;
+  height: 50px;
+  padding: 12.5px 0;
+  border-radius: 100%;
+  color: #FFFFFF;
+  text-align: center;
+  -webkti-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.card .thumbnail .edit-circle .day {
+  font-size: 18px;
+  line-height: 31px;
+  color: #fff; }
+
+.card .thumbnail img {
+  display: block;
+  width: 120%;
+  transition: all 0.3s linear 0s; }
+
+.card .post-content {
+  position: absolute;
+  bottom: 0;
+  background: #FFFFFF;
+  width: 100%;
+  padding: 0 30px;
+  box-sizing: border-box;
+  transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s; }
+
+.card .post-content .category {
+  position: absolute;
+  top: -34px;
+  left: 0;
+  background: #f2b202;
+  padding: 10px 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.card .post-content .title {
+  margin: 0;
+  padding: 0 0 10px;
+  color: #222 !important;
+  font-size: 24px !important;
+  font-weight: 700;
+  margin: 40px 0 0 !important; }
+
+.card .post-content .sub_title {
+  margin: 0;
+  padding: 0 0 20px;
+  color: #f2b202;
+  font-size: 20px;
+  font-weight: 400; }
+
+.card .post-content .post-meta {
+  margin: 0px 0px 10px;
+  color: #999999; }
+
+.card .post-content .post-meta a {
+  color: #999999;
+  text-decoration: none; }
+
+.container .column {
+  width: 100%;
+  /* padding: 0 25px; */
+  box-sizing: border-box;
+  float: left; }
+
+.container .column .demo-title {
+  margin: 0 0 15px;
+  color: #666666;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.container .info {
+  width: 300px;
+  margin: 50px auto;
+  text-align: center; }
+
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333; }
+
+.container .info span {
+  color: #666666;
+  font-size: 12px; }
+
+.container .info span a {
+  color: #000000;
+  text-decoration: none; }
+
+i {
+  color: white;
+  margin-top: -3px; }
+
+.LegoStack {
+  margin-left: 50px;
+  margin-right: 50px; }
+
+/*.create-form {
+  max-width: 100px;
+  margin-left: 50px;
+}*/
+.create-form {
+  margin-left: 0;
+  margin-top: 40px; }
+
+.create-form-title {
+  width: 400px;
+  margin-left: 0px;
+  display: inline-block; }
+
+.create-form-language {
+  max-width: 180px;
+  margin-left: 100px;
+  display: inline-block; }
+
+.create-form-type {
+  max-width: 175px;
+  margin-left: 100px;
+  display: inline-block; }
+
+.create-title {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 10px; }
+
+.code-snippet {
+  margin-left: 100px;
+  margin-top: 30px; }
+
+.add-code-snippet {
+  max-width: 85.5%;
+  min-width: 70px;
+  min-height: 220px;
+  display: inline-block; }
+
+.create-lego-btn {
+  margin-left: 45%;
+  margin-top: 10px; }
+
+.ReactCodeMirror {
+  width: 85%; }
 
 /*# sourceMappingURL=index.css.map */

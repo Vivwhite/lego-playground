@@ -10,7 +10,8 @@ class App extends Component {
     super(props);
 
     this.state = {
-      currentUser: null
+      currentUser: null,
+      currentLegoId: '' 
     }
   }
 
@@ -49,11 +50,8 @@ auth.signOut();
             currentUser={ this.state.currentUser }
             loginButtonClicked={ this.loginButtonClicked }
             logoutButtonClicked={ this.logoutButtonClicked } />
-        <div className="App-header">
 
-          <h2>Welcome to React</h2>
-        </div>
-        
+        {this.props.children}
       </div>
     );
   }

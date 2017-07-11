@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import LegoModel from '../models/Lego'
-import Timeline from '../components/Timeline'
 import { auth } from '../utils/firebase'
+import LegoStacks from '../components/LegoStacks'
 
 class LibraryContainer extends Component{
   constructor(props){
@@ -13,6 +13,7 @@ class LibraryContainer extends Component{
   }
 
   componentDidMount(){
+    this.fetchData()
     this.fetchData()
   }
 
@@ -26,8 +27,24 @@ class LibraryContainer extends Component{
   }
 
 
-// create/delete/update lego here
+  // create/delete/update lego here
 
-
-
+  render(){
+    let output = null;
+    if (this.state.currentUser != null)  {
+      output = <div>
+              <LegoStacks
+                currentUser= {this.state.currentUser}
+                legos={this.state.legos}/>
+              </div>
+    } else {
+      output = <section className="col-md-4 col-sm-12 add-event">Log in to see your library.</section>
+    }
+    return (
+      <div>
+        { output }
+      </div>
+    )
+  }
 }
+export default LibraryContainer;
