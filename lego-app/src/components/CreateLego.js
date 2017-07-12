@@ -95,14 +95,14 @@ class CreateLego extends Component {
               <p>Title</p>
               <input  onChange={ e => { this.setState({ title: e.target.value }) } }
                 value={ this.state.title }
-                type="text" className="form-control" placeholder="Enter title..."></input>
+                type="text" className="form-control" placeholder="Enter title..." required></input>
             </div>
 
             <div className="col-4 create-form-type">
               <p>Type</p>
               <input onChange={ e => { this.setState({ type: e.target.value }) } }
                 value={ this.state.type }
-                type="text" className="form-control" placeholder="Code Snippet..."></input>
+                type="text" className="form-control" placeholder="Code Snippet..." required></input>
             </div>
 
             <div className="col-3 create-form-language">

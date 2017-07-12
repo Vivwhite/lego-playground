@@ -32,7 +32,7 @@ class LibraryContainer extends Component{
   render(){
     let output = null;
     if (this.state.currentUser != null)  {
-      output = <div>
+      output = <div >
               <LegoStacks
                 currentUser= {this.state.currentUser}
                 legos={this.state.legos}/>

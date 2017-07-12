@@ -42,11 +42,10 @@ class OneLego extends Component{
     return(
       <div className="container show-lego">
         <div className="row">
-          <div className="col-lg-8">
+          <div className="col-lg-12 display-code">
             <h1 className="lego-title">{this.state.lego.title}</h1>
             <h4 className="lego-language">{this.state.lego.language}</h4>
             <h4 className="lego-type">{this.state.lego.type}</h4>
-            <p>{this.state.lego.content}</p>
             <pre>{this.state.lego.content}</pre>
 
             <p>Tag: {this.state.lego.language}</p>

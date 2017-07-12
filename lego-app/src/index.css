@@ -28,6 +28,11 @@ body {
 .navbar-collapse {
   margin-top: 13px; }
 
+.lego-logo {
+  width: 38px;
+  margin-top: -5px;
+  margin-left: -50px; }
+
 a .dropdown-toggle {
   color: white; }
 
@@ -162,7 +167,7 @@ a .dropdown-toggle {
   color: #000000;
   text-decoration: none; }
 
-i {
+.fa-pencil {
   color: white;
   margin-top: -3px; }
 
@@ -258,5 +263,10 @@ form p {
   background-color: white;
   border: 1px solid #ccc;
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; }
+
+pre {
+  text-align: left;
+  color: green;
+  background: black; }
 
 /*# sourceMappingURL=index.css.map */

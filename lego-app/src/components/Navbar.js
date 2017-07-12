@@ -21,14 +21,15 @@ class Navbar extends Component {
 
   render() {
     let url = '/create-lego';
+    let home = '/lego-library';
     return (
       <nav className="navbar navbar-default navbar-fixed-top">
         <div className="container">
           <div id="navbar row" className="navbar-collapse collapse">
 
+            <Link to={home}><img className="lego-logo pull-left" src="http://i.imgur.com/c6Ou9HS.png"></img></Link>
             <div className="nav navbar-nav navbar-right">
               <div className="dropdown">
-
                 <Link to={url}><i className="fa fa-plus-circle fa-2x pull-left" aria-hidden="true"></i></Link>
 
                 { this.sessionButton() }
