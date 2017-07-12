@@ -27,6 +27,13 @@ class LegoModel {
     return request
   }
 
+  static delete(id){
+    let request = $.ajax({
+      url: "http://sample-env.zxn5myc69x.us-east-2.elasticbeanstalk.com/legos/" + id,
+      method: 'DELETE'
+    })
+    return request
+  }
 }
 
 export default LegoModel

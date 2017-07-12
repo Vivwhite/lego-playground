@@ -24,6 +24,7 @@ class CreateLego extends Component {
       title: '',
       language: '',
       type: '',
+      description: '',
       content: ' ',
       tag: '',
       mode: 'javascript',
@@ -58,6 +59,7 @@ class CreateLego extends Component {
       title: this.state.title,
       language: this.state.language,
       type: this.state.type,
+      description: this.state.description,
       content: this.state.content,
       tag: this.state.tag
     }
@@ -71,6 +73,7 @@ class CreateLego extends Component {
       title: '',
       language: '',
       type: '',
+      description: '',
       content: '',
       tag: ''
     })
@@ -107,15 +110,17 @@ class CreateLego extends Component {
 
             <div className="col-3 create-form-language">
               <p>Language</p>
-              <select  onChange={this.changeMode} value={this.state.mode} className="selectpicker">
-                <option value="javascript">Javascript</option>
-                <option value="html">HTML</option>
-                <option value="css">CSS</option>
-              </select>
 
               <input onChange={ e => { this.setState({ language: e.target.value }) } }
                 value={ this.state.language }
-                type="hidden" className="form-control" placeholder="HTML, Javascript..."></input>
+                type="text" className="form-control" placeholder="HTML, Javascript..." required></input>
+            </div>
+
+            <div className="col-4 create-form-description">
+              <p>Description</p>
+              <input onChange={ e => { this.setState({ description: e.target.value }) } }
+                value={ this.state.description }
+                type="text" className="form-control" placeholder="Description..." required></input>
             </div>
 
             <div className="row code-snippet">

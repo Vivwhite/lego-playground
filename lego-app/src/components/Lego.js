@@ -15,12 +15,12 @@ class Lego extends Component {
                   </a>
 
                 </div>
-                  <img src="https://i.github-camo.com/cf9f43d679627c7f305936a3e1539b3201417f78/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f67696761706978656c2f61746f6d2d6c616e67756167652d676865726b696e2f6d61737465722f73637265656e73686f74732f666561747572652d73796e7461782e706e67" className="img-responsive"></img>
+                  <pre className="preview">{ this.props.data.content }</pre>
               </div>
                 <div className="post-content">
                   <div className="category">{ this.props.data.language }</div>
                   <Link to={url}><h1 className="title">{ this.props.data.title }</h1></Link>
-                  <p className="sub_title">{ this.props.data.content }</p>
+                  <p className="sub_title">{ this.props.data.description }</p>
                   <div className="post-meta"><span className="timestamp">6 mins ago</span></div>
                 </div>
             </div>

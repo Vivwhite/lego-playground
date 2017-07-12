@@ -64,6 +64,10 @@ a .dropdown-toggle {
   height: 350px;
   overflow: hidden;
   padding: 0; }
+  .card .thumbnail .preview {
+    width: 380px;
+    border: 0;
+    height: 350px; }
 
 .card .thumbnail .edit-circle {
   position: absolute;
@@ -96,6 +100,7 @@ a .dropdown-toggle {
   bottom: 0;
   background: #FFFFFF;
   width: 100%;
+  height: 154px;
   padding: 0 30px;
   box-sizing: border-box;
   transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s; }
@@ -123,7 +128,7 @@ a .dropdown-toggle {
   margin: 0;
   padding: 0 0 20px;
   color: #f2b202;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 400; }
 
 .card .post-content .post-meta {
@@ -188,19 +193,24 @@ a .dropdown-toggle {
   display: inline-block; }
 
 .create-form-language {
-  max-width: 180px;
-  margin-left: 90px;
+  max-width: 150px;
+  margin-left: 60px;
   display: inline-block; }
 
 .create-form-type {
-  max-width: 175px;
-  margin-left: 90px;
+  max-width: 165px;
+  margin-left: 75px;
   display: inline-block; }
 
 .create-title {
   margin-top: 80px;
   margin-bottom: 1px;
   color: #878e88; }
+
+.create-form-description {
+  max-width: 88.5%;
+  padding-left: 11.5%;
+  margin-top: 18px; }
 
 .code-snippet {
   margin-left: 123px;
@@ -249,6 +259,14 @@ form p {
   margin-left: 10px;
   position: fixed;
   color: white; }
+
+.btn-danger {
+  margin-top: -65px;
+  width: 48px; }
+
+.fa-trash-o {
+  color: white;
+  margin-right: 0px; }
 
 .dropdown {
   margin-top: 4px;

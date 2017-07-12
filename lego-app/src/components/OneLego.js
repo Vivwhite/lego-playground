@@ -33,6 +33,17 @@ class OneLego extends Component{
     })
   }
 
+  deleteLego() {
+
+    let id = this.props.params['id']
+    LegoModel.delete(id).then( (res) => {
+      console.log(res);
+    })
+
+ }
+
+
+
   render(){
     let options = {
    lineNumbers: true,
@@ -43,9 +54,13 @@ class OneLego extends Component{
       <div className="container show-lego">
         <div className="row">
           <div className="col-lg-12 display-code">
+
             <h1 className="lego-title">{this.state.lego.title}</h1>
             <h4 className="lego-language">{this.state.lego.language}</h4>
             <h4 className="lego-type">{this.state.lego.type}</h4>
+            <button className='btn btn-danger pull-right'
+                onClick={(e) => this.deleteLego()}><i className="fa fa-trash-o fa-2x pull-right" ></i>
+            </button>
             <pre>{this.state.lego.content}</pre>
 
             <p>Tag: {this.state.lego.language}</p>
