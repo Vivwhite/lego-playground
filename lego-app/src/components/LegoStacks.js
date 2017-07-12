@@ -12,7 +12,7 @@ class LegoStacks extends Component {
 
     return (
       <div>
-        <h2>My Library</h2>
+        <h2 className="library-title">My Library</h2>
       <div className="LegoStack">{legosArray}</div>
     </div>
     );

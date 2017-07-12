@@ -6,13 +6,14 @@ import 'codemirror/lib/codemirror.css';
 import 'codemirror/theme/dracula.css';
 import Codemirror from 'react-codemirror';
 import 'codemirror/mode/javascript/javascript';
+// import 'codemirror/mode/html/html';
 import 'codemirror/mode/xml/xml';
 import 'codemirror/mode/markdown/markdown';
 
 
 const defaults = {
   javascript: '//Write your JS code here',
-  html: '<!–– Write your HTML code here ––>'
+  xml: '<!–– Write your HTML code here ––>'
 };
 
 class CreateLego extends Component {
@@ -23,7 +24,7 @@ class CreateLego extends Component {
       title: '',
       language: '',
       type: '',
-      content: '',
+      content: ' ',
       tag: '',
       mode: 'javascript',
     },
@@ -40,10 +41,12 @@ class CreateLego extends Component {
 
 
   changeMode (e) {
+    console.log(e);
     var mode = e.target.value;
     this.setState({
       mode: mode,
-      code: defaults[mode]
+      code: defaults[mode],
+      content: defaults[mode]
     });
   }
 
@@ -74,9 +77,6 @@ class CreateLego extends Component {
 
   }
 
-
-
-
   render(){
     let options = {
    lineNumbers: true,
@@ -89,7 +89,7 @@ class CreateLego extends Component {
         <div className="row">
           <h1 className="create-title">Create Lego Stack</h1>
         </div>
-        <div className="row">
+        <div className="row formrow">
           <form onSubmit={ e => this.onFormSubmit(e) } className="form create-form row">
             <div className="col-2 create-form-title">
               <p>Title</p>
@@ -98,7 +98,15 @@ class CreateLego extends Component {
                 type="text" className="form-control" placeholder="Enter title..."></input>
             </div>
 
+            <div className="col-4 create-form-type">
+              <p>Type</p>
+              <input onChange={ e => { this.setState({ type: e.target.value }) } }
+                value={ this.state.type }
+                type="text" className="form-control" placeholder="Code Snippet..."></input>
+            </div>
+
             <div className="col-3 create-form-language">
+              <p>Language</p>
               <select  onChange={this.changeMode} value={this.state.mode} className="selectpicker">
                 <option value="javascript">Javascript</option>
                 <option value="html">HTML</option>
@@ -109,12 +117,7 @@ class CreateLego extends Component {
                 value={ this.state.language }
                 type="hidden" className="form-control" placeholder="HTML, Javascript..."></input>
             </div>
-            <div className="col-4 create-form-type">
-              <p>Type</p>
-              <input onChange={ e => { this.setState({ type: e.target.value }) } }
-                value={ this.state.type }
-                type="text" className="form-control" placeholder="Code Snippet..."></input>
-            </div>
+
             <div className="row code-snippet">
               <p>Code Snippet</p>
 

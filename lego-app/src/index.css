@@ -1,8 +1,12 @@
 .App {
   text-align: center; }
 
+body {
+  background-color: #f6f6f6; }
+
 .App h2 {
-  padding-top: 30px; }
+  padding-top: 55px;
+  padding-bottom: 20px; }
 
 .App-header {
   background-color: white;
@@ -13,11 +17,19 @@
 .navbar-profile-pic {
   width: 25px;
   margin-top: -4px;
-  margin-right: 3px; }
+  margin-right: 3px;
+  border-radius: 15px;
+  border-color: white solid 1px; }
 
 .navbar-fixed-top {
   height: 42px;
-  background-color: rgba(135, 135, 135, 0.25); }
+  background-color: #76BED0; }
+
+.navbar-collapse {
+  margin-top: 13px; }
+
+a .dropdown-toggle {
+  color: white; }
 
 .btn-login {
   margin-top: 8px; }
@@ -167,40 +179,84 @@ i {
   margin-top: 40px; }
 
 .create-form-title {
-  width: 400px;
-  margin-left: 0px;
+  width: 350px;
   display: inline-block; }
 
 .create-form-language {
   max-width: 180px;
-  margin-left: 100px;
+  margin-left: 90px;
   display: inline-block; }
 
 .create-form-type {
   max-width: 175px;
-  margin-left: 100px;
+  margin-left: 90px;
   display: inline-block; }
 
 .create-title {
-  text-align: center;
   margin-top: 80px;
-  margin-bottom: 10px; }
+  margin-bottom: 1px;
+  color: #878e88; }
 
 .code-snippet {
-  margin-left: 100px;
+  margin-left: 123px;
   margin-top: 30px; }
 
 .add-code-snippet {
-  max-width: 85.5%;
+  max-width: 95%;
   min-width: 70px;
   min-height: 220px;
   display: inline-block; }
 
 .create-lego-btn {
-  margin-left: 45%;
-  margin-top: 10px; }
+  margin-top: 10px;
+  background-color: #76BED0; }
+
+.create-lego-btn:hover {
+  background-color: #37b1d0; }
+
+form p {
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  color: #878e88;
+  font-size: 1.1em;
+  font-weight: 800;
+  margin-bottom: 5px; }
+
+.formrow {
+  width: 90%;
+  width: 90%;
+  margin: 0 auto; }
 
 .ReactCodeMirror {
   width: 85%; }
+
+.CodeMirror-scroll {
+  text-align: left; }
+
+.fa-plus-circle {
+  margin-left: 70px;
+  padding-right: 4px;
+  margin-top: -4px;
+  color: white; }
+
+.fa-sign-out {
+  margin-top: -4px;
+  margin-left: 10px;
+  position: fixed;
+  color: white; }
+
+.dropdown {
+  margin-top: 4px;
+  position: relative; }
+
+.lego-title {
+  margin-top: 80px; }
+
+.selectpicker {
+  height: 34px;
+  width: 95px;
+  background-color: white;
+  border: 1px solid #ccc;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; }
 
 /*# sourceMappingURL=index.css.map */
