@@ -34,6 +34,16 @@ class LegoModel {
     })
     return request
   }
+
+  static update(updatedLego, id){
+    let request = $.ajax({
+      url: "https://timeline--app.herokuapp.com/lifeevents/" + id,
+      method: 'PUT',
+      data: updatedLego
+    })
+    return request
+  }
 }
+
 
 export default LegoModel

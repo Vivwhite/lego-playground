@@ -7,7 +7,7 @@ class Lego extends Component {
     let url = '/legos/' + this.props.data._id;
     return (
 
-        <div className="col-md-4">
+        <div className="col-md-4 card-area">
             <div className="card">
               <div className="thumbnail">
                 <div className="edit-circle"> <a href="#0">
@@ -15,12 +15,12 @@ class Lego extends Component {
                   </a>
 
                 </div>
-                  <pre className="preview">{ this.props.data.content }</pre>
+                  <Link to={url}><pre className="preview">{ this.props.data.content }</pre></Link>
               </div>
                 <div className="post-content">
                   <div className="category">{ this.props.data.language }</div>
                   <Link to={url}><h1 className="title">{ this.props.data.title }</h1></Link>
-                  <p className="sub_title">{ this.props.data.description }</p>
+                  <p className="post-description">{ this.props.data.description }</p>
                   <div className="post-meta"><span className="timestamp">6 mins ago</span></div>
                 </div>
             </div>

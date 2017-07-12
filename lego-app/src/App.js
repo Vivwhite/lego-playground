@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './index.css';
 import Navbar from './components/Navbar';
+import { browserHistory } from 'react-router'
 import { firebase, auth } from './utils/firebase';
 
 
@@ -11,7 +12,7 @@ class App extends Component {
 
     this.state = {
       currentUser: null,
-      currentLegoId: '' 
+      currentLegoId: ''
     }
   }
 
@@ -41,6 +42,7 @@ e.preventDefault();
 // tell Firebase auth to log out
 console.log("signing out");
 auth.signOut();
+browserHistory.push('/');
 }
 
   render() {
@@ -52,6 +54,7 @@ auth.signOut();
             logoutButtonClicked={ this.logoutButtonClicked } />
 
         {this.props.children}
+        
       </div>
     );
   }

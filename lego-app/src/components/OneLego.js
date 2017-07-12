@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {auth} from '../utils/firebase'
+import { browserHistory } from 'react-router'
 import LegoModel from '../models/Lego'
 import  Lego from './Lego'
 import 'codemirror/lib/codemirror.css';
@@ -39,10 +40,8 @@ class OneLego extends Component{
     LegoModel.delete(id).then( (res) => {
       console.log(res);
     })
-
+    browserHistory.push('/lego-library')
  }
-
-
 
   render(){
     let options = {
@@ -56,8 +55,10 @@ class OneLego extends Component{
           <div className="col-lg-12 display-code">
 
             <h1 className="lego-title">{this.state.lego.title}</h1>
-            <h4 className="lego-language">{this.state.lego.language}</h4>
-            <h4 className="lego-type">{this.state.lego.type}</h4>
+            <span className="type-language">
+              <h4 className="lego-language">Language: {this.state.lego.language}</h4>
+              <h4 className="lego-type">Type: {this.state.lego.type}</h4>
+            </span>
             <button className='btn btn-danger pull-right'
                 onClick={(e) => this.deleteLego()}><i className="fa fa-trash-o fa-2x pull-right" ></i>
             </button>

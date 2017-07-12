@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import LegoModel from '../models/Lego'
+import { browserHistory } from 'react-router'
 import Lego from './Lego'
 import {auth} from '../utils/firebase'
 import 'codemirror/lib/codemirror.css';
@@ -69,15 +70,15 @@ class CreateLego extends Component {
       let newLegoStacks = legos.push(res)
       this.setState({newLegoStacks})
     })
-    this.setState({
-      title: '',
-      language: '',
-      type: '',
-      description: '',
-      content: '',
-      tag: ''
-    })
-
+    // this.setState({
+    //   title: '',
+    //   language: '',
+    //   type: '',
+    //   description: '',
+    //   content: '',
+    //   tag: ''
+    // })
+    browserHistory.push('/lego-library')
   }
 
   render(){
