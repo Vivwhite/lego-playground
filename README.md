@@ -16,13 +16,18 @@ ERD:
 Mockup:
 
 Landing page:
-![Imgur](http://i.imgur.com/2XzTjwS.png)
+![Imgur](http://i.imgur.com/H9X6NCy.png)
 
 Show page:
-![Imgur](http://i.imgur.com/SqwgMUS.png)
+![Imgur](http://i.imgur.com/zDYZKfh.png)
+
+Show one:
+![Imgur](http://i.imgur.com/Ijl1GYW.png)
 
 Create page:
-![Imgur](http://i.imgur.com/jfvD5pG.png)
+![Imgur](http://i.imgur.com/ummCQVb.png)
+
+
 
 Technology used:
 React, NodeJS, Express, MongoDB, Jquery, Sass, AWS, CodeMirror, Firebase.
