@@ -5,11 +5,10 @@ A library to store reusable UI components and code snippets for future use. Url 
 ---
 
 ## User story:
-* **User can log in/log out the account with Gmail account.**
+* **User can log in/out with Gmail account.**
 * **User can read/see gallery.**
-* **User can create lego molecule, and write and store code.**
-* **User can update/delete his/her lego molecule.**
-* **User can share code snippets on social media.**
+* **User can create lego stack, and write and store code.**
+* **User can delete his/her lego stack.**
 
 ---
 
@@ -43,13 +42,14 @@ Create page:
 * **Sass**
 * **AWS**
 * **CodeMirror**
-* **Firebase.**
+* **Firebase**
 
 ---
 
 ## Future Features
 
 * User can update his/her code snippet.
+* User can share code snippets on social media.
 * User can search for code in specific language, type or tag.
 * User can have private library.
 * Have a window to render code on the show-one page.
