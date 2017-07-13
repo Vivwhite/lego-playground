@@ -23,3 +23,6 @@ Show page:
 
 Create page:
 ![Imgur](http://i.imgur.com/jfvD5pG.png)
+
+Technology used:
+React, NodeJS, Express, MongoDB, Jquery, Sass, AWS, CodeMirror, Firebase.
