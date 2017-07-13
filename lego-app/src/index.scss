@@ -10,7 +10,6 @@ $primary-font: 'Lato', sans-serif;
 }
 
 body {
-
   background-color: #f6f6f6;
 }
 
@@ -18,7 +17,6 @@ body {
   padding-top: 55px;
   padding-bottom: 20px;
   text-align: center;
-
 }
 .App-header {
   background-color: $secondary-color;
@@ -99,8 +97,6 @@ a .dropdown-toggle {
 .preview:hover {
   transform: scale(1.1);
   opacity: .6;
-
-
 }
 
 .card .thumbnail .edit-circle {
@@ -119,11 +115,13 @@ a .dropdown-toggle {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 .card .thumbnail .edit-circle .day {
  font-size: 18px;
     line-height: 31px;
     color: #fff;
 }
+
 .card .thumbnail img {
   display: block;
   width: 120%;
@@ -133,6 +131,7 @@ a .dropdown-toggle {
 h1 .title {
   text-align: center;
 }
+
 .card .post-content {
   position: absolute;
   bottom: 0;
@@ -143,6 +142,7 @@ h1 .title {
   box-sizing: border-box;
   transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
 }
+
 .card .post-content .category {
   position: absolute;
   top: -34px;
@@ -154,6 +154,7 @@ h1 .title {
   font-weight: 600;
   text-transform: uppercase;
 }
+
 .card .post-content .title {
   margin: 0;
   padding: 0 0 10px;
@@ -162,6 +163,7 @@ h1 .title {
   font-weight: 700;    margin: 40px 0 0 !important;
   text-align: left;
 }
+
 .card .post-content .post-description {
   margin: 0;
   padding: 0 0 20px;
@@ -192,11 +194,11 @@ text-align: left;
 }
 
 .container .column {
-     width: 100%;
-    /* padding: 0 25px; */
-    box-sizing: border-box;
-    float: left;
+  width: 100%;
+  box-sizing: border-box;
+  float: left;
 }
+
 .container .column .demo-title {
   margin: 0 0 15px;
   color: #666666;
@@ -204,11 +206,13 @@ text-align: left;
   font-weight: bold;
   text-transform: uppercase;
 }
+
 .container .info {
   width: 300px;
   margin: 50px auto;
   text-align: center;
 }
+
 .container .info h1 {
   margin: 0 0 15px;
   padding: 0;
@@ -216,10 +220,12 @@ text-align: left;
   font-weight: bold;
   color: #333333;
 }
+
 .container .info span {
   color: #666666;
   font-size: 12px;
 }
+
 .container .info span a {
   color: #000000;
   text-decoration: none;
@@ -237,12 +243,6 @@ margin-top: -3px;
   margin-right: 50px;
 }
 
-
-// create lego form starts
-/*.create-form {
-  max-width: 100px;
-  margin-left: 50px;
-}*/
 .create-form {
   margin-left: 0;
   margin-top: 40px;
@@ -264,7 +264,6 @@ display: inline-block;
   max-width: 165px;
   margin-left: 75px;
   display: inline-block;
-
 }
 
 .create-title {
@@ -289,7 +288,6 @@ display: inline-block;
   min-width: 70px;
   min-height: 220px;
   display: inline-block;
-
 }
 
 .create-lego-btn {
@@ -320,7 +318,6 @@ form p {
 // Codemirror css begins
 .ReactCodeMirror {
   width: 85%;
-
 }
 
 .CodeMirror-scroll {
@@ -340,7 +337,6 @@ form p {
   margin-left: 10px;
   position: fixed;
   color: $secondary-color;
-
 }
 
 .btn-danger {
@@ -351,7 +347,6 @@ form p {
 .fa-trash-o {
   color: white;
   margin-right: 0px;
-
 }
 
 .dropdown {
@@ -367,9 +362,6 @@ form p {
   color: $dark-color
 }
 
-.type-language {
-
-}
 .lego-type {
   text-align: left;
   color: $dark-color;
@@ -388,7 +380,6 @@ form p {
       background-color: white;
       border: 1px solid #ccc;
       transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-
 }
 
 pre {
@@ -399,10 +390,8 @@ pre {
 
 .homepage {
  background-color: $docor-color;
-
  max-width: 1450px;
  height: 770px;
-
 }
 
 .home-logo {

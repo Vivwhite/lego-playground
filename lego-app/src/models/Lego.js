@@ -9,7 +9,6 @@ class LegoModel {
     return request
   }
 
-
   static getOne(id){
     let request = $.ajax({
       url: "http://sample-env.zxn5myc69x.us-east-2.elasticbeanstalk.com/legos/" + id,
@@ -44,6 +43,5 @@ class LegoModel {
     return request
   }
 }
-
 
 export default LegoModel

@@ -13,7 +13,6 @@ class Lego extends Component {
                 <div className="edit-circle"> <a href="#0">
                   <i className="fa fa-pencil fa-2x" aria-hidden="true"></i>
                   </a>
-
                 </div>
                   <Link to={url}><pre className="preview">{ this.props.data.content }</pre></Link>
               </div>
@@ -25,7 +24,6 @@ class Lego extends Component {
                 </div>
             </div>
         </div>
-
     );
   }
 }

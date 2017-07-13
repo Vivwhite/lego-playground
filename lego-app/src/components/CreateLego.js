@@ -7,7 +7,6 @@ import 'codemirror/lib/codemirror.css';
 import 'codemirror/theme/dracula.css';
 import Codemirror from 'react-codemirror';
 import 'codemirror/mode/javascript/javascript';
-// import 'codemirror/mode/html/html';
 import 'codemirror/mode/xml/xml';
 import 'codemirror/mode/markdown/markdown';
 
@@ -20,7 +19,6 @@ const defaults = {
 class CreateLego extends Component {
   constructor(props){
     super(props)
-// set initial state
     this.state = {
       title: '',
       language: '',
@@ -34,13 +32,11 @@ class CreateLego extends Component {
     this.onFormSubmit = this.onFormSubmit.bind(this);
   }
 
-
   updateCode (newCode) {
     this.setState({
       code: newCode
     });
   }
-
 
   changeMode (e) {
     console.log(e);
@@ -51,7 +47,6 @@ class CreateLego extends Component {
       content: defaults[mode]
     });
   }
-
 
   onFormSubmit(e){
       console.log('hello');
@@ -70,14 +65,6 @@ class CreateLego extends Component {
       let newLegoStacks = legos.push(res)
       this.setState({newLegoStacks})
     })
-    // this.setState({
-    //   title: '',
-    //   language: '',
-    //   type: '',
-    //   description: '',
-    //   content: '',
-    //   tag: ''
-    // })
     browserHistory.push('/lego-library')
   }
 
@@ -101,32 +88,26 @@ class CreateLego extends Component {
                 value={ this.state.title }
                 type="text" className="form-control" placeholder="Enter title..." required></input>
             </div>
-
             <div className="col-4 create-form-type">
               <p>Type</p>
               <input onChange={ e => { this.setState({ type: e.target.value }) } }
                 value={ this.state.type }
                 type="text" className="form-control" placeholder="Code Snippet..." required></input>
             </div>
-
             <div className="col-3 create-form-language">
               <p>Language</p>
-
               <input onChange={ e => { this.setState({ language: e.target.value }) } }
                 value={ this.state.language }
                 type="text" className="form-control" placeholder="HTML, Javascript..." required></input>
             </div>
-
             <div className="col-4 create-form-description">
               <p>Description</p>
               <input onChange={ e => { this.setState({ description: e.target.value }) } }
                 value={ this.state.description }
                 type="text" className="form-control" placeholder="Description..." required></input>
             </div>
-
             <div className="row code-snippet">
               <p>Code Snippet</p>
-
               <Codemirror ref="editor"
                 onChange={ e => { this.setState({ content: e }) } }
                 value={ this.state.content }
@@ -136,14 +117,11 @@ class CreateLego extends Component {
             <div className="row button-div">
               <button type="submit" className="btn btn-primary pull-center create-lego-btn">Create</button>
             </div>
-
           </form>
         </div>
       </div>
-
     )
   }
-
 }
 
 export default CreateLego;

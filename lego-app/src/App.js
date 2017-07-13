@@ -4,8 +4,6 @@ import Navbar from './components/Navbar';
 import { browserHistory } from 'react-router'
 import { firebase, auth } from './utils/firebase';
 
-
-
 class App extends Component {
   constructor(props){
     super(props);
@@ -20,7 +18,6 @@ class App extends Component {
      auth.onAuthStateChanged(currentUser => {
        if (currentUser) {
          console.log('Logged in:', currentUser);
-         // set currentUser in App component state
          this.setState({ currentUser });
        } else {
          this.setState({ currentUser: null });
@@ -52,9 +49,7 @@ browserHistory.push('/');
             currentUser={ this.state.currentUser }
             loginButtonClicked={ this.loginButtonClicked }
             logoutButtonClicked={ this.logoutButtonClicked } />
-
         {this.props.children}
-        
       </div>
     );
   }
