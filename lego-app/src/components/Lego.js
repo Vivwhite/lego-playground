@@ -20,7 +20,7 @@ class Lego extends Component {
                   <div className="category">{ this.props.data.language }</div>
                   <Link to={url}><h1 className="title">{ this.props.data.title }</h1></Link>
                   <p className="post-description">{ this.props.data.description }</p>
-                  <div className="post-meta"><span className="timestamp">6 mins ago</span></div>
+                  
                 </div>
             </div>
         </div>

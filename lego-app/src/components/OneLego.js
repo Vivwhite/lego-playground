@@ -59,12 +59,11 @@ class OneLego extends Component{
               <h4 className="lego-language">Language: {this.state.lego.language}</h4>
               <h4 className="lego-type">Type: {this.state.lego.type}</h4>
             </span>
+              <h4 className="lego-description" >Description: {this.state.lego.description}</h4>
             <button className='btn btn-danger pull-right'
                 onClick={(e) => this.deleteLego()}><i className="fa fa-trash-o fa-2x pull-right" ></i>
             </button>
             <pre>{this.state.lego.content}</pre>
-
-            <p>Tag: {this.state.lego.language}</p>
           </div>
         </div>
       </div>

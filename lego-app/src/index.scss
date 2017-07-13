@@ -364,10 +364,16 @@ form p {
 .lego-title {
   margin-top: 80px;
   text-align: left;
-  color: $dark-color
+  color: black
 }
 
 .lego-type {
+  text-align: left;
+  color: $dark-color;
+  font-size: 1.1em;
+}
+
+.lego-description {
   text-align: left;
   color: $dark-color;
   font-size: 1.1em;

@@ -292,9 +292,14 @@ form p {
 .lego-title {
   margin-top: 80px;
   text-align: left;
-  color: #878e88; }
+  color: black; }
 
 .lego-type {
+  text-align: left;
+  color: #878e88;
+  font-size: 1.1em; }
+
+.lego-description {
   text-align: left;
   color: #878e88;
   font-size: 1.1em; }
