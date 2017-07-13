@@ -20,7 +20,7 @@ class Lego extends Component {
                   <div className="category">{ this.props.data.language }</div>
                   <Link to={url}><h1 className="title">{ this.props.data.title }</h1></Link>
                   <p className="post-description">{ this.props.data.description }</p>
-                  
+
                 </div>
             </div>
         </div>
@@ -29,4 +29,3 @@ class Lego extends Component {
 }
 
 export default Lego;
-//<Link to="/lego/{this.props.data._id}"><h1 className="title">{ this.props.data.title }</h1></Link>

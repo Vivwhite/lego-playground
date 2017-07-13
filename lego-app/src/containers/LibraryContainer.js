@@ -26,9 +26,6 @@ class LibraryContainer extends Component{
     })
   }
 
-
-  // create/delete/update lego here
-
   render(){
     let output = null;
     if (this.state.currentUser != null)  {

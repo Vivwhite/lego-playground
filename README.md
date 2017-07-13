@@ -1,4 +1,4 @@
-## lego-playground ![Imgur](http://i.imgur.com/rLmYlrg.png)
+## Lego Box ![Imgur](http://i.imgur.com/rLmYlrg.png)
 
 A library to store reusable UI components and code snippets for future use. Url will be up soon!
 
