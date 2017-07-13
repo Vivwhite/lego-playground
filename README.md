@@ -1,19 +1,23 @@
-# lego-playground ![Imgur](http://i.imgur.com/rLmYlrg.png)
+## lego-playground ![Imgur](http://i.imgur.com/rLmYlrg.png)
 
-A library to store reusable UI components and code snippets for future use.
+A library to store reusable UI components and code snippets for future use. Url will be up soon!
 
-User story:
-User can log in/log out the account with Gmail account.
-User can read/see gallery.
-User can create lego molecule, and write and store code.
-User can update/delete his/her lego molecule.
-User can share code snippets on social media.
+---
 
-ERD:
+## User story:
+* **User can log in/log out the account with Gmail account.**
+* **User can read/see gallery.**
+* **User can create lego molecule, and write and store code.**
+* **User can update/delete his/her lego molecule.**
+* **User can share code snippets on social media.**
+
+---
+
+## ERD:
 
 ![Imgur](http://i.imgur.com/9zCLT0u.png)
 
-Mockup:
+## Mockup:
 
 Landing page:
 ![Imgur](http://i.imgur.com/H9X6NCy.png)
@@ -27,7 +31,25 @@ Show one:
 Create page:
 ![Imgur](http://i.imgur.com/ummCQVb.png)
 
+---
 
+## Technologies Used
 
-Technology used:
-React, NodeJS, Express, MongoDB, Jquery, Sass, AWS, CodeMirror, Firebase.
+* **React**
+* **NodeJS**
+* **Express**
+* **MongoDB**
+* **Jquery**
+* **Sass**
+* **AWS**
+* **CodeMirror**
+* **Firebase.**
+
+---
+
+## Future Features
+
+* User can update his/her code snippet.
+* User can search for code in specific language, type or tag.
+* User can have private library.
+* Have a window to render code on the show-one page.
