@@ -38,7 +38,11 @@ a .dropdown-toggle {
   color: white; }
 
 .btn-login {
-  margin-top: 8px; }
+  margin-top: -7px;
+  padding-top: -10px;
+  background-color: white;
+  color: #76BED0;
+  font-weight: 800; }
 
 .card-area {
   margin-bottom: 17px; }
@@ -159,7 +163,6 @@ h1 .title {
 
 .container .column {
   width: 100%;
-  /* padding: 0 25px; */
   box-sizing: border-box;
   float: left; }
 
@@ -198,10 +201,6 @@ h1 .title {
   margin-left: 50px;
   margin-right: 50px; }
 
-/*.create-form {
-  max-width: 100px;
-  margin-left: 50px;
-}*/
 .create-form {
   margin-left: 0;
   margin-top: 40px; }
@@ -314,7 +313,7 @@ form p {
 
 pre {
   text-align: left;
-  color: green;
+  color: #56f442;
   background: black; }
 
 .homepage {

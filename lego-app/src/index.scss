@@ -54,7 +54,11 @@ a .dropdown-toggle {
 }
 
 .btn-login {
-  margin-top: 8px;
+  margin-top: -7px;
+  padding-top: -10px;
+  background-color: $secondary-color;
+  color: $primary-color;
+  font-weight: 800;
 }
 
 // card css begins
@@ -92,6 +96,7 @@ a .dropdown-toggle {
   width: 380px;
   border: 0;
   height: 350px;
+
 }
 
 .preview:hover {
@@ -384,7 +389,7 @@ form p {
 
 pre {
   text-align: left;
-  color: green;
+  color: #56f442;
     background: black;
 }
 
