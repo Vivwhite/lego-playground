@@ -9,8 +9,10 @@ import Home from '../components/Home'
 export default (
   <Route exact path='/' component={App}>
     <Route path='/home' component={Home} />
+    {/* TODO: To have RESTFUL routes, consider making your index view `/legos` instead of `/lego-library` */}
     <Route path='/lego-library' component={LibraryContainer} />
     <Route path='/legos/:id' component={OneLego} />
+    {/* TODO: To have RESTFUL routes, consider making your create path a `/legos` POST instead of `/create-lego` */}
     <Route path='/create-lego' component={CreateLego} />
   </Route>
 )
