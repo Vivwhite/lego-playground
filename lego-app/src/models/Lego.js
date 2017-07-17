@@ -36,6 +36,7 @@ class LegoModel {
 
   static update(updatedLego, id){
     let request = $.ajax({
+      // TODO: Why are you hitting your old heroku api?  This would prove hard to update your lego objects if they're hosted on amazon ;)
       url: "https://timeline--app.herokuapp.com/lifeevents/" + id,
       method: 'PUT',
       data: updatedLego

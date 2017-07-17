@@ -15,7 +15,7 @@ class Navbar extends Component {
         <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
           <img className="navbar-profile-pic" src={ this.props.currentUser.photoURL } alt="" /> { this.props.currentUser.displayName }
         </a>
-        
+
       )
     }
   }
@@ -28,6 +28,7 @@ class Navbar extends Component {
         <div className="container">
           <div id="navbar row" className="navbar-collapse collapse">
 
+            {/* TODO: DO NOT hotlink your images from another site. You have your own site, place your images here! */}
             <Link to={home}><img className="lego-logo pull-left" src="http://i.imgur.com/c6Ou9HS.png"></img></Link>
             <div className="nav navbar-nav navbar-right">
               <div className="dropdown">
