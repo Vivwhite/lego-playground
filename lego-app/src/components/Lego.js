@@ -5,8 +5,12 @@ import { Link } from 'react-router'
 class Lego extends Component {
   render(){
     let url = '/legos/' + this.props.data._id;
-    return (
+    const content = this.props.data.content;
+    const language = this.props.data.language;
+    const title = this.props.data.title;
+    const description = this.props.data.description;
 
+    return (
         <div className="col-md-4 card-area">
             <div className="card">
               <div className="thumbnail">
@@ -14,12 +18,12 @@ class Lego extends Component {
                   <i className="fa fa-pencil fa-2x" aria-hidden="true"></i>
                   </a>
                 </div>
-                  <Link to={url}><pre className="preview">{ this.props.data.content }</pre></Link>
+                  <Link to={url}><pre className="preview">{ content }</pre></Link>
               </div>
                 <div className="post-content">
-                  <div className="category">{ this.props.data.language }</div>
-                  <Link to={url}><h1 className="title">{ this.props.data.title }</h1></Link>
-                  <p className="post-description">{ this.props.data.description }</p>
+                  <div className="category">{ language }</div>
+                  <Link to={url}><h1 className="title">{ title }</h1></Link>
+                  <p className="post-description">{ description }</p>
 
                 </div>
             </div>
