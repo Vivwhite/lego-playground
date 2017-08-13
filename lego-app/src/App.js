@@ -3,7 +3,9 @@ import './index.css';
 import Navbar from './components/Navbar';
 import { browserHistory } from 'react-router'
 import { firebase, auth } from './utils/firebase';
-import Home from './components/Home'
+import Home from './components/Home';
+import Header from './components/Header';
+
 
 class App extends Component {
   constructor(props){
@@ -20,7 +22,7 @@ class App extends Component {
        if (currentUser) {
          console.log('Logged in:', currentUser);
          this.setState({ currentUser });
-         
+
        } else {
          this.setState({ currentUser: null });
        }
@@ -42,7 +44,7 @@ e.preventDefault();
 // tell Firebase auth to log out
 console.log("signing out");
 auth.signOut();
-browserHistory.push('/home');
+browserHistory.push('/');
 }
 
 
@@ -54,6 +56,7 @@ browserHistory.push('/home');
             currentUser={ this.state.currentUser }
             loginButtonClicked={ this.loginButtonClicked }
             logoutButtonClicked={ this.logoutButtonClicked } />
+            
         {this.props.children}
       </div>
     );
