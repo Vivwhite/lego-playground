@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import LegoModel from '../models/Lego'
 import { auth } from '../utils/firebase'
 import LegoStacks from '../components/LegoStacks'
+import Home from '../components/Home'
 
 class LibraryContainer extends Component{
   constructor(props){
@@ -29,7 +30,7 @@ class LibraryContainer extends Component{
   render(){
     let output = null;
     if (this.state.currentUser != null)  {
-      output = <div >
+      output = <div>
               <LegoStacks
                 currentUser= {this.state.currentUser}
                 legos={this.state.legos}/>

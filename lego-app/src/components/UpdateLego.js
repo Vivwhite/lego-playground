@@ -43,7 +43,7 @@ class UpdateLego extends Component{
 
   render() {
     return(
-
+      <div>somgthing</div>
     )
   }
 }
