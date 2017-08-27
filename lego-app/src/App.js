@@ -56,7 +56,8 @@ browserHistory.push('/');
             currentUser={ this.state.currentUser }
             loginButtonClicked={ this.loginButtonClicked }
             logoutButtonClicked={ this.logoutButtonClicked } />
-            
+            <Header
+          currentUser={this.state.currentUser} />
         {this.props.children}
       </div>
     );

@@ -72,8 +72,10 @@ a .dropdown-toggle {
   z-index: 1;
   // display: block;
   background: #FFFFFF;
-  min-width: 270px;
-  max-width: 380px;
+  // min-width: 270px;
+  // max-width: 380px;
+  width: 100%;
+
   height: 350px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
   display: inline-block;
@@ -180,9 +182,10 @@ text-align: left;
 }
 
 .post-description {
-  display:block; width: 320px;
-   white-space: nowrap;
-   overflow: hidden;
+  display:block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 
   text-overflow: ellipsis;
   color: #f2b202;
@@ -236,7 +239,7 @@ text-align: left;
   text-decoration: none;
 }
 
-.fa-pencil {
+.fa-eye {
   color: white;
 margin-top: -3px;
 }

@@ -10,6 +10,10 @@ import 'codemirror/mode/javascript/javascript';
 import 'codemirror/mode/xml/xml';
 import 'codemirror/mode/markdown/markdown';
 
+const defaults = {
+  javascript: '//Write your JS code here',
+  xml: '<!–– Write your HTML code here ––>'
+};
 
 class OneLego extends Component{
   constructor(props){
@@ -17,6 +21,13 @@ class OneLego extends Component{
     this.state = {
       lego: {},
       currentUser: ''
+    }
+  }
+
+  getInitialState(){
+    return{
+      code: defaults.javascript,
+      readOnly: true,
     }
   }
 
@@ -47,7 +58,8 @@ class OneLego extends Component{
     let options = {
    lineNumbers: true,
    mode: this.state.mode,
-   theme: 'dracula'
+   theme: 'dracula',
+   readOnly: 'nocursor'
  };
     return(
       <div className="container show-lego">
@@ -64,6 +76,7 @@ class OneLego extends Component{
                 onClick={(e) => this.deleteLego()}><i className="fa fa-trash-o fa-2x pull-right" ></i>
             </button>
             <pre>{this.state.lego.content}</pre>
+            <Codemirror value={this.state.code}  options={options} />
           </div>
         </div>
       </div>
