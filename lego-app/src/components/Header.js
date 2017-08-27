@@ -11,7 +11,7 @@ class Header extends Component{
     }
   };
 
-  loggedIn(){
+  checkLogin(){
     if (!this.props.currentUser){
       return (
         <div className="row homepage">
@@ -20,13 +20,13 @@ class Header extends Component{
           <h1 className="row tagline">Play with code now!</h1>
         </div>
       )
-    } 
+    }
   }
 
   render(){
     return (
       <div className="App">
-        {this.loggedIn()}
+        {this.checkLogin()}
       </div>
     );
   }

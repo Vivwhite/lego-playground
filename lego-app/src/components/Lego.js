@@ -15,7 +15,7 @@ class Lego extends Component {
             <div className="card">
               <div className="thumbnail">
                 <div className="edit-circle"> <a href="#0">
-                  <i className="fa fa-pencil fa-2x" aria-hidden="true"></i>
+                  <i className="fa fa-eye fa-2x" aria-hidden="true"></i>
                   </a>
                 </div>
                   <Link to={url}><pre className="preview">{ content }</pre></Link>

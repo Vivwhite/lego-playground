@@ -13,11 +13,6 @@ class LibraryContainer extends Component{
     }
   }
 
-  componentDidMount(){
-    this.fetchData()
-    this.fetchData()
-  }
-
   fetchData(){
     LegoModel.all().then( (res) => {
       this.setState ({
@@ -27,6 +22,11 @@ class LibraryContainer extends Component{
     })
   }
 
+  componentDidMount(){
+    this.fetchData()
+    this.fetchData()
+  }
+  
   render(){
     let output = null;
     if (this.state.currentUser != null)  {
