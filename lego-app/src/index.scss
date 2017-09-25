@@ -15,9 +15,20 @@ body {
 
 .App h2 {
   padding-top: 55px;
-  padding-bottom: 20px;
-  text-align: center;
+  text-align: left;
+  font-family: $primary-font;
+  font-weight: 800;
+  margin-left: 6%;
 }
+
+hr {
+  border-width: 2px;
+  border-color: $primary-color;
+  width: 90%;
+  padding-bottom: 6px;
+  margin-top: 14px;
+}
+
 .App-header {
   background-color: $secondary-color;
   height: 130px;
@@ -104,6 +115,7 @@ a .dropdown-toggle {
 .preview:hover {
   transform: scale(1.1);
   opacity: .6;
+  text-decoration: underline black;
 }
 
 .card .thumbnail .edit-circle {
