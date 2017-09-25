@@ -3,13 +3,7 @@ import {auth} from '../utils/firebase'
 import { browserHistory } from 'react-router'
 import LegoModel from '../models/Lego'
 import  Lego from './Lego'
-import 'codemirror/lib/codemirror.css';
-import 'codemirror/theme/dracula.css';
-import Codemirror from 'react-codemirror';
-import 'codemirror/mode/javascript/javascript';
-import 'codemirror/mode/xml/xml';
-import 'codemirror/mode/markdown/markdown';
-
+import Highlight from 'react-highlight'
 
 class OneLego extends Component{
   constructor(props){
@@ -44,11 +38,6 @@ class OneLego extends Component{
  }
 
   render(){
-    let options = {
-   lineNumbers: true,
-   mode: this.state.mode,
-   theme: 'dracula'
- };
     return(
       <div className="container show-lego">
         <div className="row">
@@ -63,7 +52,10 @@ class OneLego extends Component{
             <button className='btn btn-danger pull-right'
                 onClick={(e) => this.deleteLego()}><i className="fa fa-trash-o fa-2x pull-right" ></i>
             </button>
-            <pre>{this.state.lego.content}</pre>
+
+            <Highlight className='language-name-of-snippet'>
+              {this.state.lego.content}
+            </Highlight>
           </div>
         </div>
       </div>

@@ -1,108 +1,90 @@
-
-$primary-color: #76BED0;
-$secondary-color: white;
-$docor-color:#f7cb15;
-$dark-color: #878e88;
-$primary-font: 'Lato', sans-serif;
-
 .App {
-  text-align: center;
-}
+  text-align: center; }
 
 body {
-  background-color: #f6f6f6;
-}
+  background-color: #f6f6f6; }
 
 .App h2 {
   padding-top: 55px;
-  padding-bottom: 20px;
-  text-align: center;
-}
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  margin-left: 6%; }
+
+hr {
+  border-width: 2px;
+  border-color: #76BED0;
+  width: 90%;
+  padding-bottom: 6px;
+  margin-top: 14px; }
+
 .App-header {
-  background-color: $secondary-color;
+  background-color: white;
   height: 130px;
   padding: 20px;
-  color: #76BED0;
-}
-
+  color: #76BED0; }
 
 .navbar-profile-pic {
   width: 25px;
   margin-top: -4px;
   margin-right: 3px;
   border-radius: 15px;
-  border-color: $secondary-color solid 1px;
-}
+  border-color: white solid 1px; }
 
 .navbar-fixed-top {
   height: 42px;
-  background-color: $primary-color;
-}
+  background-color: #76BED0; }
 
 .navbar-collapse {
-  margin-top: 13px;
-}
+  margin-top: 13px; }
 
 .lego-logo {
   width: 38px;
   margin-top: -5px;
-  margin-left: -50px;
-}
+  margin-left: -50px; }
 
 a .dropdown-toggle {
-  color: $secondary-color;
-}
+  color: white; }
 
 .btn-login {
   margin-top: -7px;
   padding-top: -10px;
-  background-color: $secondary-color;
-  color: $primary-color;
-  font-weight: 800;
-}
-
-// card css begins
+  background-color: white;
+  color: #76BED0;
+  font-weight: 800; }
 
 .card-area {
-  margin-bottom: 17px;
-}
+  margin-bottom: 17px; }
 
 .card {
   position: relative;
   z-index: 1;
-  // display: block;
   background: #FFFFFF;
-  min-width: 270px;
-  max-width: 380px;
+  width: 100%;
   height: 350px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-  display: inline-block;
+  display: inline-block; }
 
-}
 .card:hover,
 .hover {
   -webkit-box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
-}
+  box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3); }
 
 .card .thumbnail {
   background: #000000;
   height: 350px;
-  overflow: hidden;padding: 0;
-
-}
+  overflow: hidden;
+  padding: 0; }
 
 .preview {
   width: 380px;
   border: 0;
-  height: 350px;
-
-}
+  height: 350px; }
 
 .preview:hover {
   transform: scale(1.1);
   opacity: .6;
-}
+  text-decoration: underline black; }
 
 .card .thumbnail .edit-circle {
   position: absolute;
@@ -118,24 +100,20 @@ a .dropdown-toggle {
   text-align: center;
   -webkti-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 .card .thumbnail .edit-circle .day {
- font-size: 18px;
-    line-height: 31px;
-    color: #fff;
-}
+  font-size: 18px;
+  line-height: 31px;
+  color: #fff; }
 
 .card .thumbnail img {
   display: block;
   width: 120%;
-  transition: all 0.3s linear 0s;
-}
+  transition: all 0.3s linear 0s; }
 
 h1 .title {
-  text-align: center;
-}
+  text-align: center; }
 
 .card .post-content {
   position: absolute;
@@ -143,10 +121,9 @@ h1 .title {
   background: #FFFFFF;
   width: 100%;
   height: 154px;
-    padding: 0 30px;
+  padding: 0 30px;
   box-sizing: border-box;
-  transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
-}
+  transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s; }
 
 .card .post-content .category {
   position: absolute;
@@ -157,17 +134,16 @@ h1 .title {
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 600;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 .card .post-content .title {
   margin: 0;
   padding: 0 0 10px;
   color: #222 !important;
   font-size: 22px !important;
-  font-weight: 700;    margin: 40px 0 0 !important;
-  text-align: left;
-}
+  font-weight: 700;
+  margin: 40px 0 0 !important;
+  text-align: left; }
 
 .card .post-content .post-description {
   margin: 0;
@@ -176,243 +152,197 @@ h1 .title {
   font-size: 17px;
   font-weight: 400;
   text-overflow: ellipsis;
-text-align: left;
-}
+  text-align: left; }
 
 .post-description {
-  display:block; width: 320px;
-   white-space: nowrap;
-   overflow: hidden;
-
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
-  color: #f2b202;
-}
+  color: #f2b202; }
 
 .card .post-content .post-meta {
   margin: 0px 0px 10px;
-  color: #999999;
-}
+  color: #999999; }
 
 .card .post-content .post-meta a {
   color: #999999;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .container .column {
   width: 100%;
   box-sizing: border-box;
-  float: left;
-}
+  float: left; }
 
 .container .column .demo-title {
   margin: 0 0 15px;
   color: #666666;
   font-size: 18px;
   font-weight: bold;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 .container .info {
   width: 300px;
   margin: 50px auto;
-  text-align: center;
-}
+  text-align: center; }
 
 .container .info h1 {
   margin: 0 0 15px;
   padding: 0;
   font-size: 24px;
   font-weight: bold;
-  color: #333333;
-}
+  color: #333333; }
 
 .container .info span {
   color: #666666;
-  font-size: 12px;
-}
+  font-size: 12px; }
 
 .container .info span a {
   color: #000000;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
-.fa-pencil {
+.fa-eye {
   color: white;
-margin-top: -3px;
-}
-
-// card css ends
+  margin-top: -3px; }
 
 .LegoStack {
   margin-left: 50px;
-  margin-right: 50px;
-}
+  margin-right: 50px; }
 
 .create-form {
   margin-left: 0;
-  margin-top: 40px;
-}
+  margin-top: 40px; }
 
 .create-form-title {
-width: 350px;
-display: inline-block;
-}
+  width: 350px;
+  display: inline-block; }
 
 .create-form-language {
   max-width: 150px;
   margin-left: 60px;
-  display: inline-block;
-
-}
+  display: inline-block; }
 
 .create-form-type {
   max-width: 165px;
   margin-left: 75px;
-  display: inline-block;
-}
+  display: inline-block; }
 
 .create-title {
   margin-top: 80px;
   margin-bottom: 1px;
-  color: $dark-color;
-}
+  color: #878e88; }
 
 .create-form-description {
   max-width: 88.5%;
   padding-left: 11.5%;
-  margin-top: 18px;
-}
+  margin-top: 18px; }
 
 .code-snippet {
   margin-left: 123px;
-  margin-top: 30px;
-}
+  margin-top: 30px; }
 
 .add-code-snippet {
   max-width: 95%;
   min-width: 70px;
   min-height: 220px;
-  display: inline-block;
-}
+  display: inline-block; }
 
 .create-lego-btn {
- margin-top: 10px;
- background-color: $primary-color;
-}
+  margin-top: 10px;
+  background-color: #76BED0; }
 
 .create-lego-btn:hover {
-  background-color: #37b1d0;
-}
+  background-color: #37b1d0; }
 
 form p {
   text-align: left;
-  font-family: $primary-font;
-  color: $dark-color;
+  font-family: "Lato", sans-serif;
+  color: #878e88;
   font-size: 1.1em;
   font-weight: 800;
-  margin-bottom: 5px;
-}
+  margin-bottom: 5px; }
 
 .formrow {
   width: 90%;
   width: 90%;
-  margin: 0 auto;
-}
-// create lego form ends
+  margin: 0 auto; }
 
-// Codemirror css begins
 .ReactCodeMirror {
-  width: 85%;
-}
+  width: 85%; }
 
 .CodeMirror-scroll {
-  text-align: left;
-}
+  text-align: left; }
 
 .fa-plus-circle {
-
   margin-left: 70px;
   padding-right: 4px;
   margin-top: -4px;
-  color: $secondary-color;
-}
+  color: white; }
 
 .fa-sign-out {
   margin-top: -4px;
   margin-left: 10px;
   position: fixed;
-  color: $secondary-color;
-}
+  color: white; }
 
 .btn-danger {
   margin-top: -65px;
-  width: 48px;
-}
+  width: 48px; }
 
 .fa-trash-o {
   color: white;
-  margin-right: 0px;
-}
+  margin-right: 0px; }
 
 .dropdown {
   margin-top: 4px;
-  position: relative;
-}
-
-// Codemirror css ends
+  position: relative; }
 
 .lego-title {
   margin-top: 80px;
   text-align: left;
-  color: black
-}
+  color: black; }
 
 .lego-type {
   text-align: left;
-  color: $dark-color;
-  font-size: 1.1em;
-}
+  color: #878e88;
+  font-size: 1.1em; }
 
 .lego-description {
   text-align: left;
-  color: $dark-color;
-  font-size: 1.1em;
-}
+  color: #878e88;
+  font-size: 1.1em; }
 
 .lego-language {
-  color: $docor-color;
+  color: #f7cb15;
   text-align: left;
-  font-size: 1.1em;
-}
+  font-size: 1.1em; }
 
 .selectpicker {
   height: 34px;
   width: 95px;
-      background-color: white;
-      border: 1px solid #ccc;
-      transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-}
+  background-color: white;
+  border: 1px solid #ccc;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; }
 
 pre {
   text-align: left;
   color: #56f442;
-    background: black;
-}
+  background: black; }
 
 .homepage {
- background-color: $docor-color;
- max-width: 1450px;
- height: 770px;
-}
+  background-color: #f7cb15;
+  max-width: 1450px;
+  height: 770px; }
 
 .home-logo {
-  margin-top: 180px;
-}
+  margin-top: 180px; }
 
 .tagline {
   margin-top: 30px;
   color: white;
-  font-family: $primary-font;
+  font-family: "Lato", sans-serif;
   font-weight: 600;
-  font-size: 3em;
-}
+  font-size: 3em; }
+
+/*# sourceMappingURL=index.css.map */

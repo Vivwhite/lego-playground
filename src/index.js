@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+// import './index.scss';
+import '../node_modules/highlight.js/styles/agate.css';
 import routes from './config/routes.js';
 import {Router, browserHistory} from 'react-router';
 import App from './App';
